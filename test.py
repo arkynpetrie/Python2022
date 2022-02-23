@@ -1,1 +1,3 @@
-print("hello world")
+print("Arkyn")
+print("Ms white")
+print("kings high school")
