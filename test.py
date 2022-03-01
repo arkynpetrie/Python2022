@@ -1,3 +1,5 @@
+"""
+#4.1 ecercises
 print("Arkyn")
 print("Ms white")
 print("kings high school")
@@ -18,6 +20,7 @@ print("\n")
 print("o i know what th \n ladies like")
 print("a string is a sentence that is inside speech marks")
 print("a float is a number with a decimal point")
+#4.4 exercises
 print(543/3)
 print(543//3)
 print(543%3)
@@ -41,3 +44,12 @@ print(8*6)
 print("arkyn"*10)
 print("arkyn \n"*10)
 print("5+10=" + str(5+10))
+print("15/2=" + str(7.5))
+print("30/2*5=" + str(75.0))
+print("30/2*5=" + str(75))
+5.4 exercises
+"""
+player_lives = 10
+user_login = imdaboss50
+user_money = 2.50
+phone_number = "0220 353 775"
