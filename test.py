@@ -50,6 +50,6 @@ print("30/2*5=" + str(75))
 5.4 exercises
 """
 player_lives = 10
-user_login = imdaboss50
+user_login = "imdaboss50"
 user_money = 2.50
 phone_number = "0220 353 775"
