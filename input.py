@@ -1,4 +1,5 @@
 #6.3 Exercises 
+"""
 user_age = input("enter your age then press enter")
 print(user_age)
 enter_key = input("hello user push any key and then press enter")
@@ -14,5 +15,20 @@ user_adjective = input("please type a adjective")
 print("you go for a ",user_adjective,"run")
 user_verb = input("please type a verb")
 print("you are going to go",user_verb,)
-user_age2 = input("please type your age")
-float(,user_age2, + 10)
+user_age2 = int(input("please type your age"))
+print(f"you will be {user_age2 + 10}in ten years")
+print(f"you were born in {2022 - user_age2}")
+user_apples = int(input("please type how many apple you have"))
+user_friends = int(input("please type how many friends you have"))
+print(f"your friends can have {user_apples / user_friends} each")
+user_pizza = int(input("how many pizza's would you like"))
+user_people = int(input("how many frineds are you giving pizza to"))
+print(f"your frineds can have this amount of slices {user_pizza * 8 / user_people}")
+user_dollars = int(input("please type how many dollars you have stored"))
+user_tv = int(input("please type in how much a tv is"))
+print(f"you will have this {user_dollars - user_tv}")
+print(F"if you wait you will have {user_dollars * 0.8}")
+"""
+#current value of bitcoin 55,703
+user_bitcoin = float(input("how many bitcoin do you have"))
+bitcoin_value = 55703 
