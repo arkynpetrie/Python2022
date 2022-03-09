@@ -30,5 +30,17 @@ print(f"you will have this {user_dollars - user_tv}")
 print(F"if you wait you will have {user_dollars * 0.8}")
 """
 #current value of bitcoin 55,703
-user_bitcoin = float(input("how many bitcoin do you have"))
+user_bitcoin = int(input("how many crypto currency do you have"))
 bitcoin_value = 55703 
+print(f"your portfolio is worth {user_bitcoin * bitcoin_value} dollars")
+weekily_money = int(input("how much money do you earn a week"))
+print(f"you will earn {weekily_money * 0.85}\n after tax ")
+user_book =input("can i have a book name please")
+book1 = user_book.lower()
+book2 = user_book.upper()
+book3 = user_book.title()
+print(f"{book1}")
+print(f"{book2}")
+print(f"{book3}")
+user_number45 = int(input("please give me a number"))
+print(f"{user_book * user_number45}")
