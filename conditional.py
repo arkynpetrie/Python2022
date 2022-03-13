@@ -39,12 +39,46 @@ elif director == "Mel Gibson":
 else: 
 	print("Mel Gibson did")
 """
-score = 0 
-Arkyn_age = int(input("how old is arkyn the great"))
-if Arkyn_age == 14:
-	score == 1
+
+score = 0
+ 
+movie = input("what is my favorite movie")
+if movie == "jigsaw":
+ score = (score + 1)
+else: 
+ print("jigsaw is my favorite movie no point")
+print(f"{score}")
+book = input("what is my favorite book")
+if book == "nothing":
+ print("your right")
+ score = (score + 1)
+else: 
+ print("if you put a book then you dont know me well")
+print(f"{score}")
+game = input("what is one of my favorite games")
+if game == "halo" or "apex legends":
+ print("yes that is correct")
+ score = (score + 1)
+elif score != "halo" or "apex legends":
+ print("you are wrong")
+print(f"{score}")
+subject = input("what is my favorite subject")
+if subject == "maths":
+ print("you are correct")
+ score = (score + 1)
 else:
-	print("you are wrong")
-favorite_movie = input("jigsaw")
-if favorite_movie == jigsaw:
-	score== 2 
+ print("mmm nah wrong answer")
+print(f"{score}")
+console = input("what is my favorite console brand")
+if console == "xbox":
+ print("correct")
+ score = (score + 1)
+elif console == "playstation":
+ print("your wrong")
+ score = (score - 1)
+ print(f"{score}")
+ if score < 5:
+ 	print("you fail my test")
+if score ==5:
+ print("you have passed this time")
+ 
