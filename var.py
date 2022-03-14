@@ -1,5 +1,4 @@
 #exercise 5.4
-"""
 player_lives = 10
 user_login = "imdaboss50"
 user_money = 2.50
@@ -22,7 +21,6 @@ print(player_name)
 print(age)
 print(current_year)
 print(user_surname)
-"""
 #5.6 Exercises
 money = 200
 hat = 20

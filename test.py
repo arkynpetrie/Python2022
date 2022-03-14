@@ -1,4 +1,4 @@
-"""
+
 #4.1 ecercises
 print("Arkyn")
 print("Ms white")
@@ -47,9 +47,5 @@ print("5+10=" + str(5+10))
 print("15/2=" + str(7.5))
 print("30/2*5=" + str(75.0))
 print("30/2*5=" + str(75))
-5.4 exercises
-"""
-player_lives = 10
-user_login = "imdaboss50"
-user_money = 2.50
-phone_number = "0220 353 775"
+
+

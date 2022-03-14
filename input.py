@@ -1,5 +1,4 @@
 #6.3 Exercises 
-"""
 user_age = input("enter your age then press enter")
 print(user_age)
 enter_key = input("hello user push any key and then press enter")
@@ -28,7 +27,6 @@ user_dollars = int(input("please type how many dollars you have stored"))
 user_tv = int(input("please type in how much a tv is"))
 print(f"you will have this {user_dollars - user_tv}")
 print(F"if you wait you will have {user_dollars * 0.8}")
-"""
 #current value of bitcoin 55,703
 user_bitcoin = int(input("how many crypto currency do you have"))
 bitcoin_value = 55703 
