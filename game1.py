@@ -10,33 +10,44 @@ spaceship = Room("""
 	The bridge if the spaceship is shiny and white, with thousands
 	 of small, red, blinking lights
 	""")
+
+cargo = Room("""
+	The storage of your ship
+	""")
+hallway = Room("""a short distance to travel between locations
+""")
+
 current_room = space
+print(current_room)
 
 @when("enter airlock")
 @when("enter spaceship")
 @when("enter ship")
 def enter_spaceship():
- global current_room
-if current_room is not space:
-	say("there is no airlock here")
-else:
-	current_room = spaceship
-	print("""you heave yourself into the spaceship and
-	slam you hand on the button to close the door.
-	""")
-	print(current_room)
-
-cargo = "Room1"
+	global current_room
+	if current_room is not space:
+		say("there is no airlock here")
+	else:
+		current_room = spaceship
+		say("you heave yourself into the ship")
+		print(current_room)
+@when("enter hallway")
+@when("enter hall")
+@when("enter passage")
+def enter_hallway():
+	global current_room
+	if current_room is not spaceship:
+		say("you need to be in the airlock to use this passage")
+	else:
+		current_room = hallway
+		say("you enter the passage from the airlock")
 @when("enter cargo")
-@when("enter storage")
-@when("enter cargo hold")
-def enter_cargo():
- global current_room
-if current_room == space:
-	print("cannot enter cargo please enter airlock to proceed")
-elif current_room == spaceship:
-	print("""you enter the storage area of your ship
-	your foot steps echo as you enter the room""")
+
+
+
+
+
+
 
 
 
