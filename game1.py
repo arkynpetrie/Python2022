@@ -16,7 +16,16 @@ cargo = Room("""
 	""")
 hallway = Room("""a short distance to travel between locations
 """)
-
+docking = ("""this is where the ships come and land
+""")
+bridge = ("""the commanding location of the ship
+""")
+quarters = ("""the sleeping quarters of the ship
+""")
+mess_hall = ("""entering quarters of the ship
+""")
+escape_pods = ("""used as a last resort the escape pods are located here
+""")
 current_room = space
 print(current_room)
 
@@ -40,10 +49,16 @@ def enter_hallway():
 		say("you need to be in the airlock to use this passage")
 	else:
 		current_room = hallway
-		say("you enter the passage from the airlock")
+		say("you enter the passage from the airlock there is a sign here\n it reads cargo bridge mess_hall")
 @when("enter cargo")
-
-
+@when("enter storage")
+def enter_cargo():
+	global current_room
+	if current_room is not hallway:
+		say("you need to check out the hallway before you go to storage")
+	else:
+		current_room = cargo 
+		say("you walk into the storage it is cold here but it is also massive")
 
 
 
