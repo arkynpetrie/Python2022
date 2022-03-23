@@ -1,5 +1,5 @@
 from adventurelib import *
-
+#rooms
 space = Room("""
 	you are drifting in space it feels very cold.
 	a slate-blue spaceship sits completely silently to your left,
@@ -26,8 +26,27 @@ mess_hall = ("""entering quarters of the ship
 """)
 escape_pods = ("""used as a last resort the escape pods are located here
 """)
+#define connections
+spaceship.east = hallway
+spaceship.south = quarters
+hallway.east = bridge
+hallway.north = cargo
+hallway.south = mess_hall
+quarters.east = mess_hall 
+bridge.south = escape_pods
+cargo.east = docking
 current_room = space
 print(current_room)
+@when ("go DIRECTION")
+def travel(derections):
+	global current_room
+	if direction in current_room.exits():
+		current_room = current_room.exits(direction)
+		print(f"you go {direction}.")
+		print(current_room)
+		print(current_room.exits())
+	else:
+		print("you cant go that way")
 
 @when("enter airlock")
 @when("enter spaceship")
@@ -40,29 +59,6 @@ def enter_spaceship():
 		current_room = spaceship
 		say("you heave yourself into the ship")
 		print(current_room)
-@when("enter hallway")
-@when("enter hall")
-@when("enter passage")
-def enter_hallway():
-	global current_room
-	if current_room is not spaceship:
-		say("you need to be in the airlock to use this passage")
-	else:
-		current_room = hallway
-		say("you enter the passage from the airlock there is a sign here\n it reads cargo bridge mess_hall")
-@when("enter cargo")
-@when("enter storage")
-def enter_cargo():
-	global current_room
-	if current_room is not hallway:
-		say("you need to check out the hallway before you go to storage")
-	else:
-		current_room = cargo 
-		say("you walk into the storage it is cold here but it is also massive")
-
-
-
-
 
 
 
